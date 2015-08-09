@@ -11,6 +11,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        // Initialize the SDK before executing any other operations,
+        // especially, if you're using Facebook UI elements.
     }
 
 
@@ -34,5 +37,8 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+
     }
+
+
 }
