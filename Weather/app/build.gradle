@@ -4,6 +4,8 @@ android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
 
+    repositories { mavenCentral() }
+
     defaultConfig {
         applicationId "com.example.oleh.weather"
         minSdkVersion 15
